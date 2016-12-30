@@ -29,6 +29,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/gray_line" />
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="网络请求" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_line" />
         </LinearLayout>
     </ScrollView>
 

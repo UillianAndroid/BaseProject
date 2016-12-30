@@ -13,7 +13,10 @@ import butterknife.ButterKnife;
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @BindView(R.id.text1)
-    public TextView tv1;
+    public TextView tv1;//图片加载
+
+    @BindView(R.id.text1)
+    public TextView tv2;//网络请求
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private void initOnClick() {
         tv1.setOnClickListener(this);
+        tv2.setOnClickListener(this);
     }
 
     @Override
@@ -33,11 +37,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.text1:
                 startMyActivity(ImageLoadActivity.class);
                 break;
+            case R.id.text2:
+                startMyActivity(ImageLoadActivity.class);
+                break;
         }
     }
 
-    private void startMyActivity(Class<?> activity){
-        Intent intent=new Intent(MainActivity.this,activity) ;
+    private void startMyActivity(Class<?> activity) {
+        Intent intent = new Intent(MainActivity.this, activity);
         startActivity(intent);
     }
 

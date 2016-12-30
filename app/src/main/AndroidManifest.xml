@@ -20,7 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ImageLoadActivity"></activity>
+        <activity android:name=".ui.ImageLoadActivity" />
+        <activity android:name=".ui.OkHttpActiivtyDemo"></activity>
     </application>
 
 </manifest>
