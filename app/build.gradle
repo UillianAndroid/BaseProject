@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     compileSdkVersion 25
@@ -17,6 +18,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 }
 
 dependencies {
@@ -26,9 +32,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.0.1'
     testCompile 'junit:junit:4.12'
-    // OkHttp网络请求
-    compile 'com.squareup.okhttp:okhttp:2.0.0'
-    compile files('libs/okhttputils-1.6.0.jar')
     //图片加载 Fresco
     compile 'com.facebook.fresco:fresco:0.12.0'
     // 在 API < 14 上的机器支持 WebP 时，需要添加
@@ -42,4 +45,8 @@ dependencies {
     compile 'com.facebook.fresco:webpsupport:0.12.0'
     //    依赖注入butterknife
     compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/okhttpserver-0.1.7.jar')
+    compile files('libs/okio-1.6.0.jar')
 }

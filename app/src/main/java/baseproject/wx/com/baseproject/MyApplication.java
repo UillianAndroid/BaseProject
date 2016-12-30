@@ -20,7 +20,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         myApplication = this;
-//        initOkHttp();// 初始化OkHttp
+        initOkHttp();// 初始化OkHttp
         Fresco.initialize(this);//初始化Fresco
     }
 
