@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/assets"/><source path="/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/release/assets"/></dataSet></merger>

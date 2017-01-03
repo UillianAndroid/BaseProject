@@ -21,7 +21,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.ImageLoadActivity" />
-        <activity android:name=".ui.OkHttpActiivtyDemo"></activity>
+        <activity android:name=".ui.OkHttpActiivtyDemo" />
+        <activity android:name=".ui.ListViewActivity" />
+        <activity android:name=".ui.XRecyclerViewActivity" />
+        <activity android:name=".ui.SweetAletDialogActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,581 @@
+[
+    {
+        "outputFile": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 51,
+                    "endOffset": 102
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 329,
+                        "endColumn": 51,
+                        "endOffset": 376
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 107,
+                    "endColumn": 59,
+                    "endOffset": 162
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 381,
+                        "endColumn": 59,
+                        "endOffset": 436
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 167,
+                    "endColumn": 51,
+                    "endOffset": 214
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 165,
+                        "endColumn": 51,
+                        "endOffset": 212
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 219,
+                    "endColumn": 52,
+                    "endOffset": 267
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 551,
+                        "endColumn": 52,
+                        "endOffset": 599
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 272,
+                    "endColumn": 53,
+                    "endOffset": 321
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 326,
+                    "endColumn": 51,
+                    "endOffset": 373
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 217,
+                        "endColumn": 51,
+                        "endOffset": 264
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 378,
+                    "endColumn": 59,
+                    "endOffset": 433
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 269,
+                        "endColumn": 59,
+                        "endOffset": 324
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 438,
+                    "endColumn": 57,
+                    "endOffset": 491
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 822,
+                        "endColumn": 57,
+                        "endOffset": 875
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 496,
+                    "endColumn": 57,
+                    "endOffset": 549
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 880,
+                        "endColumn": 57,
+                        "endOffset": 933
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 554,
+                    "endColumn": 57,
+                    "endOffset": 607
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 938,
+                        "endColumn": 57,
+                        "endOffset": 991
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 612,
+                    "endColumn": 57,
+                    "endOffset": 665
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 996,
+                        "endColumn": 57,
+                        "endOffset": 1049
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 670,
+                    "endColumn": 57,
+                    "endOffset": 723
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1054,
+                        "endColumn": 57,
+                        "endOffset": 1107
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 728,
+                    "endColumn": 50,
+                    "endOffset": 774
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 441,
+                        "endColumn": 50,
+                        "endOffset": 487
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 779,
+                    "endColumn": 58,
+                    "endOffset": 833
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 492,
+                        "endColumn": 58,
+                        "endOffset": 546
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 838,
+                    "endColumn": 54,
+                    "endOffset": 888
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 604,
+                        "endColumn": 54,
+                        "endOffset": 654
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 893,
+                    "endColumn": 55,
+                    "endOffset": 944
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 55,
+                        "endOffset": 160
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 949,
+                    "endColumn": 44,
+                    "endOffset": 989
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 777,
+                        "endColumn": 44,
+                        "endOffset": 817
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 994,
+                    "endColumn": 62,
+                    "endOffset": 1052
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 659,
+                        "endColumn": 62,
+                        "endOffset": 717
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1057,
+                    "endColumn": 54,
+                    "endOffset": 1107
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 722,
+                        "endColumn": 54,
+                        "endOffset": 772
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2079,
+                    "endColumn": 43,
+                    "endOffset": 2118
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/dimen.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 43,
+                        "endOffset": 94
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2123,
+                    "endColumn": 49,
+                    "endOffset": 2168
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/dimen.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 99,
+                        "endColumn": 49,
+                        "endOffset": 144
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2173,
+                    "endColumn": 53,
+                    "endOffset": 2222
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/dimen.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 149,
+                        "endColumn": 53,
+                        "endOffset": 198
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2227,
+                    "endColumn": 46,
+                    "endOffset": 2269
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 267,
+                        "endColumn": 46,
+                        "endOffset": 309
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2274,
+                    "endColumn": 53,
+                    "endOffset": 2323
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2328,
+                    "endColumn": 68,
+                    "endOffset": 2392
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/build/intermediates/exploded-aar/com.pnikosis/materialish-progress/1.7/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 819,
+                        "endColumn": 68,
+                        "endOffset": 883
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 2397,
+                    "endColumn": 48,
+                    "endOffset": 2441
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 218,
+                        "endColumn": 48,
+                        "endOffset": 262
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2446,
+                    "endColumn": 67,
+                    "endOffset": 2509
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 67,
+                        "endOffset": 172
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2514,
+                    "endColumn": 40,
+                    "endOffset": 2550
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 177,
+                        "endColumn": 40,
+                        "endOffset": 213
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 2555,
+                    "endLine": 45,
+                    "endColumn": 12,
+                    "endOffset": 3122
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 623
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 3127,
+                    "endLine": 54,
+                    "endColumn": 12,
+                    "endOffset": 3629
+                },
+                "from": {
+                    "file": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 629,
+                        "endLine": 22,
+                        "endColumn": 12,
+                        "endOffset": 1131
+                    }
+                }
+            }
+        ]
+    }
+]

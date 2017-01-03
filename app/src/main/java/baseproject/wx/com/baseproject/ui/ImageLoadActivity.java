@@ -11,7 +11,7 @@ import butterknife.ButterKnife;
 
 public class ImageLoadActivity extends AppCompatActivity {
 
-    private String imageUrl = "https://o60knd4hs.qnssl.com/uploads/banner_file/image/4/IMG_3908.JPG";
+    public static String IMAGEURL = "https://o60knd4hs.qnssl.com/uploads/banner_file/image/4/IMG_3908.JPG";
 
     @BindView(R.id.simpleDraweeView1)
     SimpleDraweeView simpleDraweeView1;//圆角
@@ -34,9 +34,9 @@ public class ImageLoadActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        simpleDraweeView1.setImageURI(imageUrl);
-        simpleDraweeView2.setImageURI(imageUrl);
-        simpleDraweeView3.setImageURI(imageUrl);
-        simpleDraweeView4.setImageURI(imageUrl);
+        simpleDraweeView1.setImageURI(IMAGEURL);
+        simpleDraweeView2.setImageURI(IMAGEURL);
+        simpleDraweeView3.setImageURI(IMAGEURL);
+        simpleDraweeView4.setImageURI(IMAGEURL);
     }
 }

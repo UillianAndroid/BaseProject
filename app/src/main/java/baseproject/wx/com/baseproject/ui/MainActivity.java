@@ -15,8 +15,17 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @BindView(R.id.text1)
     public TextView tv1;//图片加载
 
-    @BindView(R.id.text1)
+    @BindView(R.id.text2)
     public TextView tv2;//网络请求
+
+    @BindView(R.id.text3)
+    public TextView tv3;//RecyclerView
+
+    @BindView(R.id.text4)
+    public TextView tv4;//XRecyclerViewActivity
+
+    @BindView(R.id.text5)
+    public TextView tv5;//SweetAlertDialog
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +38,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private void initOnClick() {
         tv1.setOnClickListener(this);
         tv2.setOnClickListener(this);
+        tv3.setOnClickListener(this);
+        tv4.setOnClickListener(this);
+        tv5.setOnClickListener(this);
     }
 
     @Override
@@ -39,6 +51,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.text2:
                 startMyActivity(ImageLoadActivity.class);
+                break;
+            case R.id.text3:
+                startMyActivity(ListViewActivity.class);
+                break;
+            case R.id.text4:
+                startMyActivity(XRecyclerViewActivity.class);
+                break;
+            case R.id.text5:
+                startMyActivity(SweetAletDialogActivity.class);
                 break;
         }
     }

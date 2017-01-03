@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/build/intermediates/res/merged/release/anim/success_mask_layout.xml",
+        "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/anim/success_mask_layout.xml"
+    },
+    {
+        "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/build/intermediates/res/merged/release/anim/error_frame_in.xml",
+        "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/anim/error_frame_in.xml"
+    },
+    {
+        "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/build/intermediates/res/merged/release/anim/success_bow_roate.xml",
+        "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/anim/success_bow_roate.xml"
+    },
+    {
+        "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/build/intermediates/res/merged/release/anim/error_x_in.xml",
+        "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/anim/error_x_in.xml"
+    },
+    {
+        "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/build/intermediates/res/merged/release/anim/modal_in.xml",
+        "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/anim/modal_in.xml"
+    },
+    {
+        "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/build/intermediates/res/merged/release/anim/modal_out.xml",
+        "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/sweetalertdialog/src/main/res/anim/modal_out.xml"
+    }
+]
