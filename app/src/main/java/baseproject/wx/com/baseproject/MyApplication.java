@@ -2,7 +2,6 @@ package baseproject.wx.com.baseproject;
 
 import android.app.Application;
 
-import com.facebook.drawee.backends.pipeline.Fresco;
 import com.lzy.okhttputils.OkHttpUtils;
 
 /**
@@ -21,7 +20,6 @@ public class MyApplication extends Application {
         super.onCreate();
         myApplication = this;
         initOkHttp();// 初始化OkHttp
-        Fresco.initialize(this);//初始化Fresco
     }
 
     // 初始化OkHttp

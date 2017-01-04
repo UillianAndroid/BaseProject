@@ -27,6 +27,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @BindView(R.id.text5)
     public TextView tv5;//SweetAlertDialog
 
+    @BindView(R.id.text6)
+    public TextView tv6;//拍照，图库
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +45,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         tv3.setOnClickListener(this);
         tv4.setOnClickListener(this);
         tv5.setOnClickListener(this);
+        tv6.setOnClickListener(this);
     }
 
     @Override
@@ -60,6 +65,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.text5:
                 startMyActivity(SweetAletDialogActivity.class);
+                break;
+            case R.id.text6:
+                startMyActivity(ImageSelectActivity.class);
                 break;
         }
     }

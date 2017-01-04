@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/android_wx/Documents/好用的Android开发框架/BaseProject/imagespickers/src/main/assets"/><source path="/Users/android_wx/Documents/好用的Android开发框架/BaseProject/imagespickers/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/android_wx/Documents/好用的Android开发框架/BaseProject/imagespickers/src/debug/assets"/></dataSet></merger>

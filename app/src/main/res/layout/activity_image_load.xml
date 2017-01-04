@@ -20,44 +20,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <com.facebook.drawee.view.SimpleDraweeView
+
+            <ImageView
                 android:id="@+id/simpleDraweeView1"
                 android:layout_width="100dp"
-                android:layout_height="100dp"
-                fresco:failureImage="@mipmap/ic_launcher"
-                fresco:placeholderImage="@mipmap/ic_launcher"
-                fresco:roundAsCircle="true" />
-            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_height="100dp" />
+
+            <ImageView
                 android:id="@+id/simpleDraweeView2"
                 android:layout_width="100dp"
-                android:layout_height="100dp"
-                fresco:failureImage="@mipmap/ic_launcher"
-                fresco:placeholderImage="@mipmap/ic_launcher"/>
+                android:layout_height="100dp"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <com.facebook.drawee.view.SimpleDraweeView
+
+            <ImageView
                 android:id="@+id/simpleDraweeView3"
                 android:layout_width="100dp"
-                android:layout_height="100dp"
-                fresco:failureImage="@mipmap/ic_launcher"
-                fresco:placeholderImage="@mipmap/ic_launcher"
-                fresco:roundAsCircle="false"
-                fresco:progressBarAutoRotateInterval="1000"
-                />
-            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_height="100dp" />
+
+            <ImageView
                 android:id="@+id/simpleDraweeView4"
                 android:layout_width="100dp"
-                android:layout_height="100dp"
-                fresco:failureImage="@mipmap/ic_launcher"
-                fresco:roundedCornerRadius="10dp"
-                fresco:placeholderImage="@mipmap/ic_launcher"/>
+                android:layout_height="100dp" />
         </LinearLayout>
 
     </LinearLayout>
-
 
 
 </RelativeLayout>

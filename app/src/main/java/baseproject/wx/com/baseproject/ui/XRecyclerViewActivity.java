@@ -8,9 +8,10 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.facebook.drawee.view.SimpleDraweeView;
+import com.bumptech.glide.Glide;
 import com.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
@@ -115,7 +116,7 @@ public class XRecyclerViewActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(MyViewHolder holder, int position) {
             holder.tv.setText(tvs.get(position));
-            holder.simpleDraweeView.setImageURI(ivs.get(position));
+            Glide.with(XRecyclerViewActivity.this).load(ivs.get(position)).into(holder.simpleDraweeView);
         }
 
         @Override
@@ -126,12 +127,12 @@ public class XRecyclerViewActivity extends AppCompatActivity {
         class MyViewHolder extends RecyclerView.ViewHolder {
 
             TextView tv;
-            SimpleDraweeView simpleDraweeView;
+            ImageView simpleDraweeView;
 
             public MyViewHolder(View itemView) {
                 super(itemView);
                 tv = (TextView) itemView.findViewById(R.id.list_view_item_tv);
-                simpleDraweeView = (SimpleDraweeView) itemView.findViewById(R.id.list_view_item_iv);
+                simpleDraweeView = (ImageView) itemView.findViewById(R.id.list_view_item_iv);
             }
         }
     }

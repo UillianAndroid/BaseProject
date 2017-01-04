@@ -7,10 +7,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.facebook.drawee.view.SimpleDraweeView;
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,14 +55,14 @@ public class ListViewActivity extends AppCompatActivity {
             View view = getLayoutInflater().inflate(R.layout.listview_item, null);
             MyViewHold myViewHold = new MyViewHold(view);
             myViewHold.tv = (TextView) view.findViewById(R.id.list_view_item_tv);
-            myViewHold.simpleDraweeView = (SimpleDraweeView) view.findViewById(R.id.list_view_item_iv);
+            myViewHold.simpleDraweeView = (ImageView) view.findViewById(R.id.list_view_item_iv);
             return myViewHold;
         }
 
         @Override
         public void onBindViewHolder(MyViewHold holder, int position) {
             holder.tv.setText(tvs.get(position));
-            holder.simpleDraweeView.setImageURI(ivs.get(position));
+            Glide.with(ListViewActivity.this).load(ivs.get(position)).into(holder.simpleDraweeView);
         }
 
         @Override
@@ -73,7 +74,7 @@ public class ListViewActivity extends AppCompatActivity {
     class MyViewHold extends RecyclerView.ViewHolder {
 
         TextView tv;
-        SimpleDraweeView simpleDraweeView;
+        ImageView simpleDraweeView;
 
         public MyViewHold(View itemView) {
             super(itemView);

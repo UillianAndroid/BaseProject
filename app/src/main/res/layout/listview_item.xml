@@ -13,11 +13,9 @@
         android:layout_height="wrap_content"
         android:text="哈哈"/>
 
-    <com.facebook.drawee.view.SimpleDraweeView
+    <ImageView
         android:id="@+id/list_view_item_iv"
         android:layout_width="100dp"
-        android:layout_height="100dp"
-        fresco:failureImage="@mipmap/ic_launcher"
-        fresco:placeholderImage="@mipmap/ic_launcher"/>
+        android:layout_height="100dp"/>
 
 </LinearLayout>
