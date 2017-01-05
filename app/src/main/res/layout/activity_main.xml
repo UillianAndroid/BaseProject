@@ -23,6 +23,7 @@
                 android:id="@+id/text1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="图片加载"
                 android:textSize="18sp" />
 
@@ -36,6 +37,7 @@
                 android:id="@+id/text2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="网络请求"
                 android:textSize="18sp" />
 
@@ -49,6 +51,7 @@
                 android:id="@+id/text3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="RecyclerView"
                 android:textSize="18sp" />
 
@@ -62,6 +65,7 @@
                 android:id="@+id/text4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="XRecyclerView"
                 android:textSize="18sp" />
 
@@ -75,6 +79,7 @@
                 android:id="@+id/text5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="SweetAlertDialog"
                 android:textSize="18sp" />
 
@@ -88,7 +93,22 @@
                 android:id="@+id/text6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="拍照／图库"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="下载"
                 android:textSize="18sp" />
 
             <View

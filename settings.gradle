@@ -1,1 +1,1 @@
-include ':app',':xrecyclerview',':sweetalertdialog',':imagespickers'
+include ':app', ':xrecyclerview', ':sweetalertdialog', ':imagespickers', ':downloader'

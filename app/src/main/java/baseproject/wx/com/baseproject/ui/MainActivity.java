@@ -30,6 +30,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @BindView(R.id.text6)
     public TextView tv6;//拍照，图库
 
+    @BindView(R.id.text7)
+    public TextView tv7;//下载
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         tv4.setOnClickListener(this);
         tv5.setOnClickListener(this);
         tv6.setOnClickListener(this);
+        tv7.setOnClickListener(this);
     }
 
     @Override
@@ -68,6 +72,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.text6:
                 startMyActivity(ImageSelectActivity.class);
+                break;
+            case R.id.text7:
+                startMyActivity(DownLoaderActiivty.class);
                 break;
         }
     }
