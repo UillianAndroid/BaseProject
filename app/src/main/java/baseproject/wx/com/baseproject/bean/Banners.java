@@ -48,6 +48,10 @@ public class Banners {
 
     @Override
     public String toString() {
-        return super.toString();
+        String str = "Banners" + ",id=" + getId() + ",usage=" + getUsage() + ",status=" + getStatus();
+        for (int i = 0; i < getBanner_files().size(); i++) {
+            str = str + "banner_files" + i + "," + getBanner_files().get(i).toString();
+        }
+        return str.toString();
     }
 }

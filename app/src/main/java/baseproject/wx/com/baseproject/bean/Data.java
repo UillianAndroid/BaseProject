@@ -21,6 +21,10 @@ public class Data {
 
     @Override
     public String toString() {
-        return super.toString();
+        StringBuilder sb=new StringBuilder();
+        for(int i=0;i<getBanners().size();i++){
+            sb.append(getBanners().get(i).toString());
+        }
+        return sb.toString();
     }
 }

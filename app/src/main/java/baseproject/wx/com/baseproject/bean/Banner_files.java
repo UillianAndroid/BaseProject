@@ -73,6 +73,9 @@ public class Banner_files {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Banner_files:" + ",id=" + getId() + ",title=" + getTitle()
+                + ",sub_title=" + getSub_title() + ",image_url=" + getImage_url()
+                + ",small_image_url=" + getSmall_image_url() + ",content="
+                + getContent() + ",banner_id=" + getBanner_id();
     }
 }
