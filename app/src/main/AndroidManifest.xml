@@ -30,7 +30,8 @@
         <activity android:name=".ui.XRecyclerViewActivity" />
         <activity android:name=".ui.SweetAletDialogActivity" />
         <activity android:name=".ui.BigImageActivity" />
-        <activity android:name=".ui.ImageSelectActivity"></activity>
+        <activity android:name=".ui.ImageSelectActivity" />
+        <activity android:name=".ui.HttpRequestActivity"></activity>
     </application>
 
 </manifest>

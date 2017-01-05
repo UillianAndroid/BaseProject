@@ -55,7 +55,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 startMyActivity(ImageLoadActivity.class);
                 break;
             case R.id.text2:
-                startMyActivity(ImageLoadActivity.class);
+                startMyActivity(HttpRequestActivity.class);
                 break;
             case R.id.text3:
                 startMyActivity(ListViewActivity.class);
