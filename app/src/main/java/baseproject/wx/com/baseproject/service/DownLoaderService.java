@@ -4,8 +4,10 @@ import android.app.NotificationManager;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
+import android.util.Log;
 
 import java.io.File;
 
@@ -30,24 +32,44 @@ public class DownLoaderService extends Service {
 
         final int[] length = new int[1];
         DLManager.getInstance(this).dlStart(url, path, null, null, new SimpleDListener() {
-            @Override
-            public void onStart(String fileName, String realUrl, int fileLength) {
-                builder.setContentTitle(fileName);
-                length[0] = fileLength;
-            }
+                    @Override
+                    public void onStart(String fileName, String realUrl, int fileLength) {
+                        builder.setContentTitle(fileName);
+                        length[0] = fileLength;
+                    }
 
-            @Override
-            public void onProgress(int progress) {
-                builder.setProgress(length[0], progress, false);
-                nm.notify(id, builder.build());
-            }
+                    @Override
+                    public void onProgress(int progress) {
+                        builder.setProgress(length[0], progress, false);
+                        nm.notify(id, builder.build());
+                    }
 
-            @Override
-            public void onFinish(File file) {
-                nm.cancel(id);
-            }
-        });
-        return super.onStartCommand(intent, flags, startId);
+                    @Override
+                    public void onFinish(File file) {
+                        nm.cancel(id);
+                        /** 下载完成后自动安装apk */
+                        if (!file.exists()) {
+                            return;
+                        }
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.setDataAndType(Uri.parse("file://" + file.toString()),
+                                "application/vnd.android.package-archive");
+                        startActivity(intent);
+                    }
+
+                    @Override
+                    public void onError(int status, String error) {
+                        super.onError(status, error);
+                        Log.d("WX",status+"***"+error);
+                    }
+                }
+
+        );
+        return super.
+
+                onStartCommand(intent, flags, startId);
+
     }
 
     @Override
