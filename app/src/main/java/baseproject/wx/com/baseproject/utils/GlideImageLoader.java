@@ -74,7 +74,8 @@ public class GlideImageLoader implements ImageLoader {
                 .fitCenter()//居中填满，根据需要自由设置
                 .into(imageView);
     }
-    public static void displayLocalGif(Context context, int gifID, ImageView imageView){
+
+    public static void displayLocalGif(Context context, int gifID, ImageView imageView) {
         with(context)//上下文对象，可Activity，Fragment
                 .load(gifID)//图片ID
                 .asGif()//作为gif

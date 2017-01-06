@@ -60,7 +60,7 @@ public class HttpRequestActivity extends AppCompatActivity implements View.OnCli
         switch (v.getId()) {
             case R.id.button1:
                 TAG = 1;
-                httpGet("http://api.careinner.com/v1/banners/patient_home.json?usage=patient_home&access_token=9e829e4ab757c3389902f821c6b0b63caf976015675e9c38c2d4a16618d5c49f");
+                httpGet("http://api.careinner.com/v1/banners/patient_home.json?usage=patient_home&access_token=edca6176605cfe2d07ae8bb9632b145308b600975e8b2d71bcfa6979b0496840");
                 break;
             case R.id.button2:
                 TAG = 2;

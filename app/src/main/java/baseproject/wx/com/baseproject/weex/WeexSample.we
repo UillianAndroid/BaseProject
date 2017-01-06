@@ -1,0 +1,46 @@
+<template>
+    <scroller>
+        <text>用户名：</text>
+        <input id="top" type="text" autofocus="true" placeholder="请输入用户名" value="{{username}}"  oninput="usernameoninput" style="margin-top: 200px;margin-left: 200px;font-size:32px;">
+        </input>
+        <text>密码：</text>
+        <input type="password" autofocus="true" placeholder="请输入密码" value="{{password}}" oninput="passwordoninput" style="margin-top: 200px;margin-left: 200px;font-size:32px;">
+        </input>
+        <input type="success"  value="登录" onclick="login" style="margin-top: 200px;margin-left: 200px;">
+        </input>
+    </scroller>
+</template>
+
+<style>
+
+</style>
+
+<script>
+var common = require('./lib/common.js');
+module.exports = {
+    data: {
+    root:"dist",
+    username:"",
+    password:""
+    },
+    ready: function () {
+    },
+    methods:{
+    login:function(e){
+        var storage = require('@weex-module/storage');
+        var self = this;
+        var bundleUrl = this.$getConfig().bundleUrl;
+        var url = common.getUrl(bundleUrl,'mainindex.lib','dist');
+        storage.setItem('username', self.username, function(e) {
+        self.$openURL(url)
+        });
+    },
+    usernameoninput:function(e){
+        this.username = e.value;
+    },
+    passwordoninput:function(e){
+        this.password = e.value;
+    }
+    }
+}
+</script>

@@ -33,6 +33,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @BindView(R.id.text7)
     public TextView tv7;//下载
 
+    @BindView(R.id.text8)
+    public TextView tv8;//Html5
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         tv5.setOnClickListener(this);
         tv6.setOnClickListener(this);
         tv7.setOnClickListener(this);
+        tv8.setOnClickListener(this);
     }
 
     @Override
@@ -75,6 +79,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.text7:
                 startMyActivity(DownLoaderActiivty.class);
+                break;
+            case R.id.text8:
+                startMyActivity(WeexActivity.class);
                 break;
         }
     }
