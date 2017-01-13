@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/downloader" />
             <option value="$PROJECT_DIR$/imagespickers" />
+            <option value="$PROJECT_DIR$/rxdownload" />
             <option value="$PROJECT_DIR$/sweetalertdialog" />
             <option value="$PROJECT_DIR$/xrecyclerview" />
           </set>

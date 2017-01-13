@@ -1,7 +1,6 @@
 package baseproject.wx.com.baseproject.ui;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,10 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import baseproject.wx.com.baseproject.R;
+import baseproject.wx.com.baseproject.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ListViewActivity extends AppCompatActivity {
+public class ListViewActivity extends BaseActivity {
 
     @BindView(R.id.recyclerView1)
     RecyclerView recyclerView;

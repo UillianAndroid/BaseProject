@@ -2,15 +2,15 @@ package baseproject.wx.com.baseproject.ui;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.garymansell.SweetAlert.SweetAlertDialog;
 
 import baseproject.wx.com.baseproject.R;
+import baseproject.wx.com.baseproject.base.BaseActivity;
 
 
-public class SweetAletDialogActivity extends AppCompatActivity implements View.OnClickListener {
+public class SweetAletDialogActivity extends BaseActivity implements View.OnClickListener {
 
     private int i = -1;
 

@@ -2,10 +2,8 @@ package baseproject.wx.com.baseproject.ui;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -19,10 +17,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import baseproject.wx.com.baseproject.R;
+import baseproject.wx.com.baseproject.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class XRecyclerViewActivity extends AppCompatActivity {
+public class XRecyclerViewActivity extends BaseActivity {
 
     @BindView(R.id.my_list_view1)
     XRecyclerView xRecyclerView;
@@ -54,7 +53,6 @@ public class XRecyclerViewActivity extends AppCompatActivity {
         xRecyclerView.setLoadingListener(new XRecyclerView.LoadingListener() {
             @Override
             public void onRefresh() {
-                Log.d("XRecyclerView", "刷新");
                 refreshTime++;
                 times = 0;
                 new Handler().postDelayed(new Runnable() {
@@ -74,7 +72,6 @@ public class XRecyclerViewActivity extends AppCompatActivity {
 
             @Override
             public void onLoadMore() {
-                Log.d("XRecyclerView", "加载更多");
                 if (times < 2) {
                     new Handler().postDelayed(new Runnable() {
                         @Override

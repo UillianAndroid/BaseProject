@@ -24,19 +24,19 @@
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notify开始下载" />
+            android:text="停止下载并删除文件" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Progress开始下载" />
+            android:text="开始下载" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Progress停止下载" />
+            android:text="暂停下载" />
 
         <ProgressBar
             android:id="@+id/progressbar1"

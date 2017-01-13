@@ -2,16 +2,16 @@ package baseproject.wx.com.baseproject.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
 import baseproject.wx.com.baseproject.R;
+import baseproject.wx.com.baseproject.base.BaseActivity;
 import baseproject.wx.com.baseproject.utils.GlideImageLoader;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ImageLoadActivity extends AppCompatActivity implements View.OnClickListener {
+public class ImageLoadActivity extends BaseActivity implements View.OnClickListener {
 
     public static String IMAGEURL = "https://o60knd4hs.qnssl.com/uploads/banner_file/image/4/IMG_3908.JPG";
 

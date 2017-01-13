@@ -2,7 +2,6 @@ package baseproject.wx.com.baseproject.ui;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -14,6 +13,7 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 import baseproject.wx.com.baseproject.R;
+import baseproject.wx.com.baseproject.base.BaseActivity;
 import baseproject.wx.com.baseproject.bean.Bean;
 import baseproject.wx.com.baseproject.bean.Resp;
 import baseproject.wx.com.baseproject.http.HttpResponseStringCallback;
@@ -26,7 +26,7 @@ import okhttp3.Call;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class HttpRequestActivity extends AppCompatActivity implements View.OnClickListener {
+public class HttpRequestActivity extends BaseActivity implements View.OnClickListener {
 
     @BindView(R.id.button1)
     Button btn1;

@@ -4,12 +4,15 @@ import android.app.Application;
 
 import com.lzy.okhttputils.OkHttpUtils;
 
+import baseproject.wx.com.baseproject.receiver.NetChangeBroadcastReceiver;
+
 /**
  * Created by android_wx on 16/12/28.
  */
 
 public class MyApplication extends Application {
     private static MyApplication myApplication;
+    private NetChangeBroadcastReceiver netChangeBroadcastReceiver;
 
     public static MyApplication getinstance() {
         return myApplication;
@@ -20,6 +23,10 @@ public class MyApplication extends Application {
         super.onCreate();
         myApplication = this;
         initOkHttp();// 初始化OkHttp
+        //实时检测网络状态
+//        netChangeBroadcastReceiver = new NetChangeBroadcastReceiver();
+//        IntentFilter filter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+//        this.registerReceiver(netChangeBroadcastReceiver, filter);
     }
 
     // 初始化OkHttp

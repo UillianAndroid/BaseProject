@@ -2,17 +2,17 @@ package baseproject.wx.com.baseproject.ui;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.webkit.JsResult;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import baseproject.wx.com.baseproject.R;
+import baseproject.wx.com.baseproject.base.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class WeexActivity extends AppCompatActivity {
+public class WeexActivity extends BaseActivity {
 
     @BindView(R.id.webview1)
     WebView mWebView;
@@ -39,9 +39,9 @@ public class WeexActivity extends AppCompatActivity {
         mWebView.setHorizontalScrollBarEnabled(false);
 
         // 支持通过js打开新的窗口
-        mWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(false);
+        mWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
 
-        mWebView.loadUrl("www.baidu.com");
+        mWebView.loadUrl("file:///android_asset/www/main.html");
 
         mWebView.setWebChromeClient(new WebChromeClient() {
 
@@ -50,14 +50,12 @@ public class WeexActivity extends AppCompatActivity {
                                      final JsResult result) {
                 //Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
                 result.cancel();
-                mWebView.loadUrl("www.baidu.com");
                 return true;
             }
 
             @Override
             public boolean onJsConfirm(WebView view, String url,
                                        String message, final JsResult result) {
-                mWebView.loadUrl("www.baidu.com");
                 return true;
             }
         });

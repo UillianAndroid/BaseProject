@@ -212,7 +212,7 @@ public final class DLManager {
             return;
         }
         if (TASK_DLING.containsKey(url)) {
-            if (null != listener) listener.onError(ERROR_REPEAT_URL, url + " is downloading.");
+            if (null != listener) listener.onError(ERROR_REPEAT_URL, "The file is downloading.");
         } else {
             DLInfo info;
             if (TASK_STOPPED.containsKey(url)) {

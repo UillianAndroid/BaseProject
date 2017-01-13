@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zlc.season.rxdownload.test" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="25" />
+
+    <instrumentation
+        android:name="android.support.test.runner.AndroidJUnitRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for zlc.season.rxdownload.test"
+        android:targetPackage="zlc.season.rxdownload.test" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+
+        <service android:name="zlc.season.rxdownload.function.DownloadService" />
+    </application>
+
+</manifest>

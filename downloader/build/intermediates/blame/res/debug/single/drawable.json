@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
-        "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
-    },
-    {
         "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
         "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",

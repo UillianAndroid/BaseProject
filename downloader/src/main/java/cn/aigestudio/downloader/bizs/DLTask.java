@@ -117,7 +117,7 @@ class DLTask implements Runnable, IDLThreadListener {
                 addRequestHeaders(conn);
 
                 final int code = conn.getResponseCode();
-                Log.d("AigeStudio", code+"");
+                Log.d("AigeStudio", code + "");
                 switch (code) {
                     case HTTP_OK:
                     case HTTP_PARTIAL:
@@ -160,6 +160,8 @@ class DLTask implements Runnable, IDLThreadListener {
         info.file = new File(info.dirPath, info.fileName);
         if (info.file.exists() && info.file.length() == info.totalBytes) {
             Log.d(TAG, "The file which we want to download was already here.");
+            if (info.hasListener)
+                info.listener.onError(DLError.ERROR_FILE_EXIST, "The file which we want to download was already here.");
             return;
         }
         if (info.hasListener) info.listener.onStart(info.fileName, info.realUrl, info.totalBytes);

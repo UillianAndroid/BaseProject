@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/downloader/downloader.iml" filepath="$PROJECT_DIR$/downloader/downloader.iml" />
       <module fileurl="file://$PROJECT_DIR$/imagespickers/imagespickers.iml" filepath="$PROJECT_DIR$/imagespickers/imagespickers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxdownload/rxdownload.iml" filepath="$PROJECT_DIR$/rxdownload/rxdownload.iml" />
       <module fileurl="file://$PROJECT_DIR$/sweetalertdialog/sweetalertdialog.iml" filepath="$PROJECT_DIR$/sweetalertdialog/sweetalertdialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" />
     </modules>

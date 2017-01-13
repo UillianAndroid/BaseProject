@@ -32,4 +32,8 @@ public final class DLError {
      * 未能处理的重定向错误
      */
     public static final int ERROR_UNHANDLED_REDIRECT = 333;
+    /**
+     * 下载文件已存在本地
+     */
+    public static final int ERROR_FILE_EXIST = 10007;
 }

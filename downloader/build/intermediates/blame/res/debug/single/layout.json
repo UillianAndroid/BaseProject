@@ -20,12 +20,12 @@
         "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_lines_media.xml"
     },
     {
-        "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/layout/design_navigation_item_header.xml"
-    },
-    {
         "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
         "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/layout/design_navigation_item_header.xml"
     },
     {
         "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/downloader/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",

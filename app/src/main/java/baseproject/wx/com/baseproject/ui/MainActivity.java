@@ -5,12 +5,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.garymansell.SweetAlert.SweetAlertDialog;
+
 import baseproject.wx.com.baseproject.R;
 import baseproject.wx.com.baseproject.base.BaseActivity;
+import baseproject.wx.com.baseproject.service.UpdateAppService;
+import baseproject.wx.com.baseproject.utils.StartActivityUtil;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
+    private String apkUrl = "https://o60knd4hs.qnssl.com/Weinei-Android_20161230174404.apk";
 
     @BindView(R.id.text1)
     public TextView tv1;//图片加载
@@ -36,6 +41,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @BindView(R.id.text8)
     public TextView tv8;//Html5
 
+    @BindView(R.id.text9)
+    public TextView tv9;//检查更新
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +52,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         ButterKnife.bind(this);
         initOnClick();
     }
+
 
     private void initOnClick() {
         tv1.setOnClickListener(this);
@@ -54,41 +63,67 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         tv6.setOnClickListener(this);
         tv7.setOnClickListener(this);
         tv8.setOnClickListener(this);
+        tv9.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.text1:
-                startMyActivity(ImageLoadActivity.class);
+                StartActivityUtil.statr(this, ImageLoadActivity.class);
                 break;
             case R.id.text2:
-                startMyActivity(HttpRequestActivity.class);
+                StartActivityUtil.statr(this, HttpRequestActivity.class);
                 break;
             case R.id.text3:
-                startMyActivity(ListViewActivity.class);
+                StartActivityUtil.statr(this, ListViewActivity.class);
                 break;
             case R.id.text4:
-                startMyActivity(XRecyclerViewActivity.class);
+                StartActivityUtil.statr(this, XRecyclerViewActivity.class);
                 break;
             case R.id.text5:
-                startMyActivity(SweetAletDialogActivity.class);
+                StartActivityUtil.statr(this, SweetAletDialogActivity.class);
                 break;
             case R.id.text6:
-                startMyActivity(ImageSelectActivity.class);
+                StartActivityUtil.statr(this, ImageSelectActivity.class);
                 break;
             case R.id.text7:
-                startMyActivity(DownLoaderActiivty.class);
+                StartActivityUtil.statr(this, DownLoaderActiivty.class);
                 break;
             case R.id.text8:
-                startMyActivity(WeexActivity.class);
+                StartActivityUtil.statr(this, WeexActivity.class);
+                break;
+            case R.id.text9:
+                checkAppUpdate();
                 break;
         }
     }
 
-    private void startMyActivity(Class<?> activity) {
-        Intent intent = new Intent(MainActivity.this, activity);
-        startActivity(intent);
+    //检查更新
+    private void checkAppUpdate() {
+        final SweetAlertDialog sweetAlertDialog = new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE);
+        sweetAlertDialog.setTitleText("发现新版本！");
+        sweetAlertDialog.setContentText("为了更好的用户体验，您是否选择更新？");
+        sweetAlertDialog.setCancelText("稍后更新");
+        sweetAlertDialog.setConfirmText("立即更新");
+        sweetAlertDialog.showCancelButton(true);
+        sweetAlertDialog.setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
+            @Override
+            public void onClick(SweetAlertDialog sDialog) {
+                sweetAlertDialog.cancel();
+            }
+        });
+        sweetAlertDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+            @Override
+            public void onClick(SweetAlertDialog sDialog) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, UpdateAppService.class);
+                intent.putExtra(UpdateAppService.INTENT_DOWNLOAD_URL, apkUrl);
+                intent.putExtra(UpdateAppService.INTENT_SAVE_NAME, "weinei.apk");
+                startService(intent);
+                sweetAlertDialog.cancel();
+            }
+        });
+        sweetAlertDialog.show();
     }
-
 }

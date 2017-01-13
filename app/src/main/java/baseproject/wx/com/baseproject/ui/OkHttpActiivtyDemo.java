@@ -1,11 +1,11 @@
 package baseproject.wx.com.baseproject.ui;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
 import baseproject.wx.com.baseproject.R;
+import baseproject.wx.com.baseproject.base.BaseActivity;
 
-public class OkHttpActiivtyDemo extends AppCompatActivity {
+public class OkHttpActiivtyDemo extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
