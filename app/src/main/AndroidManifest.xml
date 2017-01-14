@@ -42,6 +42,7 @@
         <activity android:name=".ui.DownLoaderActiivty" />
         <activity android:name=".ui.WeexActivity" />
         <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.GuideActivity"></activity>
     </application>
 
 </manifest>

@@ -30,7 +30,12 @@ public class SplashActivity extends BaseActivity implements TimeUtil.TimeUtilInt
     @Override
     public void timerTaskDuration(int duration) {
         if (duration == 1) {
-            StartActivityUtil.statr(this, MainActivity.class);
+            if (userSP.getIsGuide()) {
+                StartActivityUtil.statr(this, GuideActivity.class);
+            } else {
+                StartActivityUtil.statr(this, MainActivity.class);
+            }
+            finish();
         }
     }
 }

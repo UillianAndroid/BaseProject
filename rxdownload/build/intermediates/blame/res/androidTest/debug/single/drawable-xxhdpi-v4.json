@@ -16,12 +16,12 @@
         "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/rxdownload/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/rxdownload/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png",
-        "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/rxdownload/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
-    },
-    {
         "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/rxdownload/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png",
         "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/rxdownload/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/rxdownload/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png",
+        "source": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/rxdownload/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "/Users/android_wx/Documents/好用的Android开发框架/BaseProject/rxdownload/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",

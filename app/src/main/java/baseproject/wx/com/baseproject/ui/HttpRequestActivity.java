@@ -18,7 +18,6 @@ import baseproject.wx.com.baseproject.bean.Bean;
 import baseproject.wx.com.baseproject.bean.Resp;
 import baseproject.wx.com.baseproject.http.HttpResponseStringCallback;
 import baseproject.wx.com.baseproject.utils.GsonUtil;
-import baseproject.wx.com.baseproject.utils.ProgressUtil;
 import baseproject.wx.com.baseproject.xml.PullRespPraser;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -42,6 +41,7 @@ public class HttpRequestActivity extends BaseActivity implements View.OnClickLis
 
     private int TAG;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,6 +57,8 @@ public class HttpRequestActivity extends BaseActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
+        loadingSD.setTitleText("Loading......");
+        loadingSD.show();
         switch (v.getId()) {
             case R.id.button1:
                 TAG = 1;
@@ -77,12 +79,12 @@ public class HttpRequestActivity extends BaseActivity implements View.OnClickLis
         @Override
         public void onBefore(BaseRequest request) {
             super.onBefore(request);
-            ProgressUtil.startProgressBar(HttpRequestActivity.this);
         }
 
         @Override
         public void onResponse(boolean b, String s, Request request, @Nullable Response response) {
             super.onResponse(b, s, request, response);
+            loadingSD.dismiss();
             textView1.setText("");
             textView2.setText(s);
             if (TAG == 1) {
@@ -104,7 +106,6 @@ public class HttpRequestActivity extends BaseActivity implements View.OnClickLis
         @Override
         public void onAfter(boolean isFromCache, @Nullable String s, Call call, @Nullable Response response, @Nullable Exception e) {
             super.onAfter(isFromCache, s, call, response, e);
-            ProgressUtil.stopProgressBar();
         }
     };
 }

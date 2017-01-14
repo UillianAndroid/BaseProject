@@ -11,6 +11,9 @@ import baseproject.wx.com.baseproject.receiver.NetChangeBroadcastReceiver;
  */
 
 public class MyApplication extends Application {
+
+    public static boolean ISFIRST = true;
+
     private static MyApplication myApplication;
     private NetChangeBroadcastReceiver netChangeBroadcastReceiver;
 

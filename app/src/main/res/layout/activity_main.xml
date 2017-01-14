@@ -144,6 +144,20 @@
                 android:layout_height="1dp"
                 android:layout_marginTop="5dp"
                 android:background="@color/gray_line" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="PopWindow"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/gray_line" />
         </LinearLayout>
     </ScrollView>
 

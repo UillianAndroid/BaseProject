@@ -2,6 +2,7 @@ package baseproject.wx.com.baseproject.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -9,10 +10,13 @@ import com.garymansell.SweetAlert.SweetAlertDialog;
 
 import baseproject.wx.com.baseproject.R;
 import baseproject.wx.com.baseproject.base.BaseActivity;
+import baseproject.wx.com.baseproject.custom.MyPopWindow;
 import baseproject.wx.com.baseproject.service.UpdateAppService;
 import baseproject.wx.com.baseproject.utils.StartActivityUtil;
+import baseproject.wx.com.baseproject.utils.ToastUtil;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
     private String apkUrl = "https://o60knd4hs.qnssl.com/Weinei-Android_20161230174404.apk";
@@ -50,22 +54,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        initOnClick();
     }
 
-
-    private void initOnClick() {
-        tv1.setOnClickListener(this);
-        tv2.setOnClickListener(this);
-        tv3.setOnClickListener(this);
-        tv4.setOnClickListener(this);
-        tv5.setOnClickListener(this);
-        tv6.setOnClickListener(this);
-        tv7.setOnClickListener(this);
-        tv8.setOnClickListener(this);
-        tv9.setOnClickListener(this);
-    }
-
+    @OnClick({R.id.text1, R.id.text2, R.id.text3, R.id.text4, R.id.text5, R.id.text6, R.id.text7, R.id.text8, R.id.text9, R.id.text10})
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -73,6 +64,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 StartActivityUtil.statr(this, ImageLoadActivity.class);
                 break;
             case R.id.text2:
+
                 StartActivityUtil.statr(this, HttpRequestActivity.class);
                 break;
             case R.id.text3:
@@ -95,6 +87,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.text9:
                 checkAppUpdate();
+                break;
+            case R.id.text10:
+                MyPopWindow myPopWindow = new MyPopWindow(this, false, onClickListener);
+                myPopWindow.showAtLocation(findViewById(R.id.activity_main), Gravity.BOTTOM, 0, 0);
                 break;
         }
     }
@@ -126,4 +122,19 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         });
         sweetAlertDialog.show();
     }
+
+    private View.OnClickListener onClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()) {
+                case R.id.popwindow_top_tv:
+                    ToastUtil.shortShow(MainActivity.this, "顶部按钮");
+                    break;
+                case R.id.popwindow_center_tv:
+                    ToastUtil.shortShow(MainActivity.this, "中间按钮");
+                    break;
+            }
+        }
+    };
+
 }

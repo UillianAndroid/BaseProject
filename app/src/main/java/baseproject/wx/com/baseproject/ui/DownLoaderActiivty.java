@@ -42,6 +42,7 @@ public class DownLoaderActiivty extends BaseActivity implements View.OnClickList
     private String defaultPath = getExternalStoragePublicDirectory(DIRECTORY_DOWNLOADS).getPath();
     private String savePath = Environment.getExternalStorageDirectory() + "/baseProject/";
     private String url = "http://dldir1.qq.com/weixin/android/weixin6330android920.apk";
+    //    private String url = "https://o60knd4hs.qnssl.com/Weinei-Android_20161230174404.apk";
     private Subscription subscription;
     private RxDownload mRxDownload;
 
@@ -108,17 +109,13 @@ public class DownLoaderActiivty extends BaseActivity implements View.OnClickList
         pause();
         mProgress.setProgress(0);
         File file = new File(savePath + saveName);
-        Log.e("DownLoaderActiivty", file.getPath());
         if (file.exists()) {
-            Log.e("DownLoaderActiivty", "存在！！！");
             file.delete();
-        } else {
-            Log.e("DownLoaderActiivty", "不存在！！！");
         }
     }
 
     private void installApk() {
-        Uri uri = Uri.fromFile(new File(defaultPath + File.separator + saveName));
+        Uri uri = Uri.fromFile(new File(savePath + File.separator + saveName));
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         intent.setDataAndType(uri, "application/vnd.android.package-archive");
@@ -129,12 +126,15 @@ public class DownLoaderActiivty extends BaseActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+//            删除任务和文件
             case R.id.button1:
                 delete();
                 break;
+//            开始下载
             case R.id.button2:
                 start();
                 break;
+//            暂停下载（服务器支持断点续传，下次继续，否则重新开始）
             case R.id.button3:
                 pause();
                 break;
